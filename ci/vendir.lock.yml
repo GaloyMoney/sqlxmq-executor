@@ -1,0 +1,15 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'fix: work around frozen params issue'
+      sha: cffedd82af6e527d0adbc33bc9599db0850bf771
+    path: .
+  path: ../.github/workflows/vendor
+- contents:
+  - git:
+      commitTitle: 'fix: work around frozen params issue'
+      sha: cffedd82af6e527d0adbc33bc9599db0850bf771
+    path: .
+  path: ./vendor
+kind: LockConfig
