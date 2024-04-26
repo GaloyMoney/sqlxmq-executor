@@ -1,0 +1,15 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'chore: add rust toolchain (#51)'
+      sha: 87fe9058ffc8df9b59c64d5be5f268e18c40abf2
+    path: .
+  path: ../.github/workflows/vendor
+- contents:
+  - git:
+      commitTitle: 'chore: add rust toolchain (#51)'
+      sha: 87fe9058ffc8df9b59c64d5be5f268e18c40abf2
+    path: .
+  path: vendor
+kind: LockConfig
