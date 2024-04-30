@@ -1,0 +1,15 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'fix: remove extra run field in rust-check-code.yml (#54)'
+      sha: cf019b0824456877035b30561f519f7615e6901c
+    path: .
+  path: ../.github/workflows/vendor
+- contents:
+  - git:
+      commitTitle: 'fix: remove extra run field in rust-check-code.yml (#54)'
+      sha: cf019b0824456877035b30561f519f7615e6901c
+    path: .
+  path: vendor
+kind: LockConfig
