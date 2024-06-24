@@ -1,0 +1,15 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'chore: using nix to check-code'
+      sha: 655c61f11b911126f7af393a2d7b84aff0dd9886
+    path: .
+  path: ../.github/workflows/vendor
+- contents:
+  - git:
+      commitTitle: 'chore: using nix to check-code'
+      sha: 655c61f11b911126f7af393a2d7b84aff0dd9886
+    path: .
+  path: vendor
+kind: LockConfig

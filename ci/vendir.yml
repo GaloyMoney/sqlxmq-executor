@@ -1,0 +1,30 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+
+# Relative to ci/
+directories:
+- path: ../.github/workflows/vendor
+  contents:
+  - path: . # Copy this folder out to ..
+    git:
+      url: https://github.com/GaloyMoney/concourse-shared.git
+      ref: 655c61f11b911126f7af393a2d7b84aff0dd9886
+    includePaths:
+    - shared/actions/*
+    excludePaths:
+    - shared/actions/nodejs-*
+    - shared/actions/chart-*
+    newRootPath: shared/actions
+
+- path: ./vendor
+  contents:
+  - path: .
+    git:
+      url: https://github.com/GaloyMoney/concourse-shared.git
+      ref: 655c61f11b911126f7af393a2d7b84aff0dd9886
+    includePaths:
+    - shared/ci/**/*
+    excludePaths:
+    - shared/ci/**/nodejs-*
+    - shared/ci/**/chart-*
+    newRootPath: shared/ci
